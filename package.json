@@ -1,0 +1,25 @@
+{
+  "name": "discord-mta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwmondo/discord-mta.git"
+  },
+  "author": "mwmondo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mwmondo/discord-mta/issues"
+  },
+  "homepage": "https://github.com/mwmondo/discord-mta#readme",
+  "dependencies": {
+    "discord-rpc": "^3.0.1",
+    "gamedig": "^2.0.7",
+    "node-cron": "^2.0.3",
+    "openurl": "^1.1.1"
+  }
+}
