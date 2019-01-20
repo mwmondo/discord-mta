@@ -11,3 +11,6 @@ You will need: <br />
 ## Running
 You have to install the dependencies. So, just run `setup.cmd` from the repo's folder.<br>
 The `Multi Theft Auto RPC` shortcut should appear on your desktop
+
+## Preview
+![](https://puu.sh/CzBj4/59dd1d1779.png)
