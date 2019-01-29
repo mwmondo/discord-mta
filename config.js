@@ -1,4 +1,4 @@
 module.exports = {
     'timer' : true,
-    'server' : '',
+    'server' : '193.70.125.98',
 }
