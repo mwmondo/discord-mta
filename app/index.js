@@ -10,6 +10,13 @@ if (!config.server) {
     console.error("You don`t set IP address");
     return;
 }
+if (config.port) {
+    var port = config.port;
+    console.log("Port: " + port);
+} else {
+    var port = 22003;
+    console.log("No port specified, use default.")
+}
 console.log("Server IP: " + config.server + "\n"
     + "Timer enable: " + config.timer + "\n"
     + "You can change this option in config.js file")
@@ -22,7 +29,8 @@ if (config.timer == true) {
 rpc.on('ready', () => {
     Gamedig.query({
         type: 'mtasa',
-        host: config.server
+        host: config.server,
+        port: port
     }).then((state) => {
         console.log("Starting MTA...");
         let connect = state.connect;
@@ -46,7 +54,8 @@ rpc.on('ready', () => {
 cron.schedule('0 */1,5 * * * *', function() {
     Gamedig.query({
         type: 'mtasa',
-        host: config.server
+        host: config.server,
+        port: port
     }).then((state) => {
         rpc.setActivity({
             details: state.name,
